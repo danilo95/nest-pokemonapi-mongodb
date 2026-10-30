@@ -60,3 +60,19 @@ yarn start:dev
 
 - MongoDB
 - NEST
+
+## Production Build
+
+1. create _.env.prod_
+2. fill the variables
+3. build docker image
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+## Swagger
+
+```
+http://localhost:3000/api/v2/docs
+```
